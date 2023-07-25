@@ -3,11 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
     <title>자바스크립트 시작</title>
+    <script>
+        /* 내부 스크립트 위치(head) */
+    </script>
 </head>
 <body>
-    
+    <!-- 태그 작성위치 -->
+    <P>1+1</P>
+    <script> /* 태그가 닫히기 바로 직전에 스크립트를 씀 */
+        /* 내부 스크립트 위치(body) */
+        // 한 줄 주석
+        /* 여러 줄 주석 */
+        //객체지향언어 = 자바스크립트
+        //var 변수명 대입연산자 대입데이터
+        var a = 10; 
+        var b =20; 
+        console.log(a);
+        document.write(b);
+        //-------------
+        /* var OX 퀴즈 */
+        /* 1.var 1num=10; X -> var num1 = 10; */
+        /* 2.var $num=10; O */
+        /* 3.var 100num=10; X -> var num100 = 10; */
+        /* 4. var num 100=10; O */
+        /* 5.var document=10; X (바로 도큐먼트 선언해서 이상한건가?) */
+        /* 6.var num=10; O */
+        /* 7.var str="hello"; O */
+        //----------------------------
+        /* 화면에 변수를 출력한다. */
+        //콘솔창에 변수를 출력한다.
+        //객체(콘솔) 속성(x) 이벤트(x) 메서드(변수풀력).
+        // 객체.속성
+        /* 객체.메서드() */
+       /*  객체.속성.메서드() */
+       //------------------------
+       //데이터타입 = String(문자) Number(숫자)
+        console.log('1+1'); //따옴표로 묶인 데이터=문자로
+        console.log(1+1); //2
+        //2개 이상 데이터 묶어서 사용하기
+        //숫자+숫자=숫자
+        //문자+문자=문자
+        //문자+숫자=문자 예)'1'+1='11'
+        //-----------------
+        var box1 = 10;
+        var box2 = '10';
+        var box3 = 20;
+        var box4 = 1;
+
+        console.log(box1, box2, box3, box4)
+        console.log(box1+box2+box3+box4)
+        console.log(typeof (box1+box3))
+        document.write(typeof (box1+box3))
+        console.log('box1='+box1)
+        console.log('box2='+box2)
+        console.log('box3='+box3)
+        console.log('box4='+box4)
+        //box1+box3=30
+        console.log('box1+box3='+(box1+box3));
+        //괄호안에 있는 데이터를 먼저 계산하는 편이니 숫자 데이터를 먼저 계산시키고 이후에 문자 데이터를 계산해 합침
+        //box1+box3+box4 = 31
+        console.log('box1+box3+box4='+(box1+box3+box4));
+        //box1+box2 = 1010
+        console.log('box1+box2='+(box1+box2))
+        //box3+box4 = 21
+        console.log('box3+box4='+(box3+box4))
+        //2X1=2
+        console.log('2X1='+(2*1))
+        //2X2=4
+        console.log('2X2='+(2*2))
+        console.log('---------') //console 구분 선
+
+        var str1 = '자바스크립트';
+        console.log(typeof(str1)); //string
+        //속성 length 문자열 길이 속성
+        console.log(str1.length) //6
+        console.log('str1.length:'+str1.length) // str1.length: 6
+    </script>
 </body>
 </html>
